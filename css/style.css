@@ -32,28 +32,32 @@ body {
     border-radius: 10px;
 }
 
-.box__titulo h1 {
-    font-size: 1.5rem;
+.box__titulo {
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 1.3rem 0;
     padding: 0 1rem;
     line-height: 2rem;
     color: var(--dark-blue);
 }
 
-.box__titulo h1 span {
-    display: block;
-}
-
 .box__descricao {
     color: var(--grayish-blue);
     font-size: 15px;
+    font-weight: bold;
     padding: 0 1rem;
     text-align: center;
     line-height: 1.3rem;
 }
 
-.box__descricao span {
-    display: block;
+@media screen and (max-width: 320px) {
+
+    .box {
+        box-sizing: border-box;
+    }
+
+    .box__titulo {
+        font-size: 1.1rem;
+    }
 }
